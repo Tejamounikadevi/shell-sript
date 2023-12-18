@@ -35,7 +35,7 @@ fi # fi means reverse of if, indicating condition end
 for package in $@ 
 do
     yum list installed $package &>> $LOGFILE # check instlled or not
-    if [ $? -ne ] # if not installed
+    if [ $? -ne 0 ] # if not installed
     then
         yum install $package -y &>> $LOGFILE # install the package
         VALIDATE $? "Installation of $package" #validate
