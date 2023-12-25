@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=""
-WISHES="Good Morning"
+WISHES=""
 
 USAGE(){
     echo "USGAE:: $(basename $0) -n <name> -w <wishes>"
